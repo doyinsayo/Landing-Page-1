@@ -3,245 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clutch - Terms of Service</title>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Clutch - Privacy Policy</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      background-color: #FCF8E6; /* Beige off-white background */
-      color: #333;
-      line-height: 1.7;
-      padding: 40px 20px;
-      max-width: 850px;
-      margin: 0 auto; /* Keep content centered */
+      background-color: #f5f2e8;
+      color: #1a1a1a;
+    }
+
+    /* Top Section - Beige Background */
+    .top-section {
+      background-color: #FCF8E6;
+      padding: 40px 60px 60px;
+      min-height: 70vh;
     }
 
     .header {
-      margin-bottom: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 40px;
     }
 
     .logo {
       width: 120px;
       height: auto;
+    }
+
+    .title-image {
+      width: 400px;
+      max-width: 50%;
+      height: auto;
+      margin: 0 auto;
       display: block;
-      margin-bottom: 20px;
     }
 
-    .title {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 40px;
-      font-weight: 700;
-      color: #1a1a1a;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin: 0 0 10px 0;
-      text-align: center;
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    .intro {
-      margin-bottom: 32px;
+    .content-image {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
-    .intro h3 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      color: #111;
-    }
-
-    .intro p {
-      font-size: 15px;
-      color: #444;
-    }
-
-    .section {
-      margin-bottom: 28px;
-    }
-
-    .section-title {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 20px;
-      font-weight: 600;
-      color: #1a1a1a;
-      margin-bottom: 12px;
-    }
-
-    .section-content {
-      font-size: 15px;
-      color: #444;
-    }
-
-    .section-content p {
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 8px;
-    }
-
-    li {
-      margin-bottom: 8px;
-      padding-left: 18px;
+    /* Footer Section - Purple Background */
+    .footer-section {
+      background: #8001CC;
+      padding: 60px 60px 40px;
       position: relative;
+      min-height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
-    li::before {
-      content: "•";
-      color: #1a1a1a;
-      font-weight: bold;
-      position: absolute;
-      left: 0;
+    .large-logo-container {
+      width: 100%;
+      max-width: 1400px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .contact-email {
-      color: #1a1a1a;
+    .large-logo {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      color: #FCF8E6;
+    }
+
+    .footer-content {
+      width: 100%;
+      max-width: 1400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-size: 13px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .footer-left {
+      flex: 1;
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 30px;
+    }
+
+    .footer-content a {
+      color: white;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
     }
 
-    .contact-email:hover {
+    .footer-content a:hover {
+      opacity: 0.8;
       text-decoration: underline;
     }
 
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    .footer a {
-      color: #1a1a1a;
-      text-decoration: none;
-      margin: 0 10px;
-      transition: color 0.2s ease;
-    }
-
-    .footer a:hover {
-      color: #000;
-    }
-
+    /* Mobile Responsiveness */
     @media (max-width: 768px) {
-      body {
-        padding: 28px 16px;
+      .top-section {
+        padding: 30px 25px 40px;
       }
 
-      .title {
-        font-size: 30px;
+      .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
       }
 
       .logo {
         width: 100px;
       }
+
+      .title-image {
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .content {
+        padding: 0 10px;
+      }
+
+      .footer-section {
+        padding: 40px 25px 30px;
+      }
+
+      .large-logo {
+        max-width: 100%;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        font-size: 11px;
+      }
+
+      .footer-right {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .top-section {
+        padding: 20px 15px 30px;
+      }
+
+      .logo {
+        width: 80px;
+      }
+
+      .title-image {
+        max-width: 280px;
+      }
+
+      .footer-section {
+        padding: 30px 15px 20px;
+      }
+
+      .footer-content {
+        font-size: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <!-- Logo now sits top-left -->
-    <img class="logo" src="Logo2.png" alt="Clutch Logo" />
-    <h1 class="title">Terms of Service</h1>
-  </div>
+  <!-- Top Section with Beige Background -->
+  <div class="top-section">
+    <div class="header">
+      <!-- Purple Logo (top left) -->
+      <img class="logo" src="Group-2.png" alt="Clutch Logo" />
+      <!-- Terms of service Title (centered) -->
+      <img class="title-image" src="TERMS OF SERVICE.png" alt="Privacy Policy" />
+      
+      <!-- Empty space for alignment -->
+      <div style="width: 120px;"></div>
+    </div>
 
-  <div class="intro">
-    <h3 class="intro-header">Introduction</h3>
-    <p>These Terms of Service ("Terms") govern your access to and use of Clutch Technologies Ltd's services, including ClutchBot, the Clutch website, and related products (collectively, the "Services"). By using our Services, you agree to these Terms.</p>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">1. Eligibility</h2>
-    <div class="section-content">
-      <p>You must be at least 16 years old to use our Services. By using Clutch, you confirm you meet this requirement.</p>
+    <!-- Content -->
+    <div class="content">
+      <img class="content-image" src="terms-of-service-content.png" alt="Terms of Service Content.." />
     </div>
   </div>
 
-  <div class="section">
-    <h2 class="section-title">2. Use of Services</h2>
-    <div class="section-content">
-      <ul>
-        <li>You agree to use Clutch responsibly and only for lawful purposes.</li>
-        <li>You will not misuse, disrupt, or attempt to reverse-engineer our Services.</li>
-        <li>Information provided (e.g. car details) must be accurate.</li>
-      </ul>
+  <!-- Footer Section with Purple Background -->
+  <div class="footer-section">
+    <!-- Large Clutch Logo Watermark -->
+    <div class="large-logo-container">
+      <img class="large-logo" src="Group.png" alt="Clutch" />
     </div>
-  </div>
 
-  <div class="section">
-    <h2 class="section-title">3. Accounts & Data</h2>
-    <div class="section-content">
-      <ul>
-        <li>By using ClutchBot, you consent to us storing your information (name, phone number, car details).</li>
-        <li>You are responsible for the accuracy of data you provide.</li>
-      </ul>
+    <!-- Footer Text and Links -->
+    <div class="footer-content">
+      <div class="footer-left">
+        Clutch Technologies Ltd. Registered in Nigeria under CAC BN 8803251
+      </div>
+      <div class="footer-right">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
     </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">4. Intellectual Property</h2>
-    <div class="section-content">
-      <p>All content, trademarks, designs, and code are the property of Clutch Technologies Ltd, registered in Nigeria under CAC BN 8803251. You may not copy, modify, or distribute our intellectual property without written consent.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">5. Limitations of Liability</h2>
-    <div class="section-content">
-      <p>Clutch provides information and tips but does not guarantee accuracy for all cars or conditions. We are not liable for:</p>
-      <ul>
-        <li>Losses or damages from reliance on information provided.</li>
-        <li>Costs of repairs, parts, or services recommended by third parties.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">6. Third-Party Services</h2>
-    <div class="section-content">
-      <p>Clutch may link to or integrate with third-party services. We are not responsible for their content, practices, or terms.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">7. Termination</h2>
-    <div class="section-content">
-      <p>We may suspend or terminate your access if you violate these Terms.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">8. Changes to Terms</h2>
-    <div class="section-content">
-      <p>We may update these Terms at any time. Continued use of our Services after changes constitutes acceptance.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">9. Governing Law</h2>
-    <div class="section-content">
-      <p>These Terms are governed by the laws of the Federal Republic of Nigeria.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">10. Contact Us</h2>
-    <div class="section-content">
-      <p>If you have any questions about these Terms, contact us at:</p>
-      <ul>
-        <li>Email: <a href="mailto:support@talktoclutch.com" class="contact-email">support@talktoclutch.com</a></li>
-        <li>Legal Entity: Clutch Technologies Ltd, Registered in Nigeria under CAC BN 8803251</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer">
-    <p>
-      <a href="test.html">Home</a> | 
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
-    <p>&copy; 2025 Clutch Technologies Ltd. All rights reserved.</p>
   </div>
 </body>
 </html>
