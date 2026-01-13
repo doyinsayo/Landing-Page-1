@@ -126,20 +126,39 @@ body{
   text-align:center;
 }
 
-/* ===== MOBILE FOOTER FIX (NEW) ===== */
+/* ===== MOBILE FOOTER FIX (IMPROVED) ===== */
 @media (max-width:640px){
   .site-footer{
     flex-direction:column;
-    gap:10px;
+    gap:8px;
     padding:14px 20px;
     text-align:center;
   }
 
-  .site-footer .left,
-  .site-footer .center,
+  /* Order the links */
+  .site-footer .left{
+    order:1;
+    line-height:1;
+  }
+
   .site-footer .right{
-    text-align:center;
+    order:2;
+    line-height:1;
+  }
+
+  /* Company text goes last */
+  .site-footer .center{
+    order:3;
+    line-height:1.3;
+    font-size:12px;
+    margin-top:6px;
+  }
+
+  .site-footer .left,
+  .site-footer .right,
+  .site-footer .center{
     flex:none;
+    text-align:center;
   }
 }
 
